@@ -1,7 +1,48 @@
-# Vue 3 + Vite
+# Quizzard - CPS530 Simple Quiz App 🧙‍♂️
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Quizzard is a Vue.js app designed to test students on CPS530. It is associated with the [CPS530-Website repository](https://github.com/andrearcaina/CPS530-Website).
 
-## Recommended IDE Setup
+## Purpose
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+The purpose of Quizzard is to provide a quiz for CPS530 students to test their knowledge on various topics related to web development.
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/Quizzard.git
+    ```
+
+2. Change into the project directory:
+
+    ```bash
+    cd Quizzard
+    ```
+
+3. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+### Usage
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Visit http://localhost:3000 in your browser to view the app.
+
+## Features
+- Quiz questions related to CPS530 topics.
+- Interactive user interface for answering questions.
+- Score tracking and quiz completion status.
