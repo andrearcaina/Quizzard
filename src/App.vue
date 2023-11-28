@@ -75,9 +75,14 @@ const restartQuiz = () => {
 			
 				<ul>
 					<li>
-					<strong>Challenge:</strong> Trying to understand Vue.js Syntax.
-					<br />
-					<strong>Solution:</strong> Well, the best way to learn is to practice. I had to go through the documentation and watch some tutorials to get a better understanding of Vue.js. That's all. Overall, it was a fun experience!
+						<strong>Challenge:</strong> Trying to understand Vue.js Syntax.
+						<br />
+						<strong>Solution:</strong> Well, the best way to learn is to practice. I had to go through the documentation and watch some tutorials to get a better understanding of Vue.js. That's all. Overall, it was a fun experience!
+					</li>
+					<li> 
+						<strong>Challenge:</strong> Deploying on GitHub Pages!
+						<br />
+						<strong>Solution:</strong> This took a while, but I finally got it. I had to install github pages onto vue, and then go into my package.json and add a script called "deploy". This allows me to deploy the app onto GitHub Pages.
 					</li>
 
 
