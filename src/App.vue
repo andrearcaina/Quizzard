@@ -35,11 +35,11 @@ const NextQuestion = () => {
 };
 
 const restartQuiz = () => {
-  currentQuestion.value = 0;
-  quizCompleted.value = false;
-  questions.value.forEach((q) => {
-    q.selected = null;
-  });
+	currentQuestion.value = 0;
+	quizCompleted.value = false;
+	questions.value.forEach((q) => {
+		q.selected = null;
+	});
 };
 </script>
 
@@ -50,11 +50,11 @@ const restartQuiz = () => {
 		<section class="quiz" v-if="!quizCompleted">
 			<div class="quiz-info">
 				<div class="question">
-          {{ currentQuestion+1 }}.
-          {{ getCurrentQuestion.question }} 
-          <div class="code" v-if="getCurrentQuestion.code">
-            {{ getCurrentQuestion.code }}
-          </div>
+			{{ currentQuestion+1 }}.
+			{{ getCurrentQuestion.question }} 
+			<div class="code" v-if="getCurrentQuestion.code">
+				{{ getCurrentQuestion.code }}
+			</div>
         </div>
 				
         <div class="score">Score {{ score }}/{{ questions.length }}</div>
@@ -77,7 +77,7 @@ const restartQuiz = () => {
 							: ''
 					}`">
 					
-          <input 
+					<input 
 						type="radio" 
 						:id="'option' + index" 
 						:name="getCurrentQuestion.index" 
@@ -103,10 +103,10 @@ const restartQuiz = () => {
 			</button>
 		</section>
 
-		<section v-else>
-      <p>Your score is {{ score }}/{{ questions.length }}</p>
-      
-      <button @click="restartQuiz">Restart Quiz</button>
+	<section v-else>
+		<p>Your score is {{ score }}/{{ questions.length }}</p>
+		
+		<button @click="restartQuiz">Restart Quiz</button>
     </section>
 	</main>
 </template>
