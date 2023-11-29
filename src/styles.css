@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #1c3621;
-    color: #FFF;
+	background-color: #1c3621;
+	color: #FFF;
 }
 
 .blurb {
@@ -19,22 +19,22 @@ body {
 }
 
 h2 {
-color: #42b983;
+	color: #42b983;
 }
 
 .install {
-background-color: #f5f5f5;
-color: black;
-padding: 10px;
-border-radius: 4px;
+	background-color: #f5f5f5;
+	color: black;
+	padding: 10px;
+	border-radius: 4px;
 }
 
 .app {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
-    padding: 2rem;
+
+	padding: 2rem;
 	height: 100vh;
 }
 
@@ -45,9 +45,9 @@ h1 {
 
 .quiz {
 	background-color: #414d43;
-    border-radius: 15px;
+	border-radius: 15px;
 	padding: 1rem;
-    
+
 	width: 100%;
 	max-width: 640px;
 }
@@ -55,26 +55,26 @@ h1 {
 .quiz-info {
 	display: flex;
 	justify-content: space-between;
-	
-    margin-bottom: 1rem;
+
+	margin-bottom: 1rem;
 }
 
 .quiz-info .question {
-    color: #FFF; 
-    font-size: 1.25rem;
-    font-weight: 800;
+	color: #FFF; 
+	font-size: 1.25rem;
+	font-weight: 800;
 }
 
 .quiz-info .question .code {
-    font-size: 1rem;
-    font-family: 'Roboto', monospace;
-    
-    background-color: #000000; 
-    color: #ffffff;
+	font-size: 1rem;
+	font-family: 'Roboto', monospace;
 
-    padding: 10px; 
-    border-radius: 5px; 
-    overflow: auto;
+	background-color: #000000; 
+	color: #ffffff;
+
+	padding: 10px; 
+	border-radius: 5px; 
+	overflow: auto;
 }
 
 .quiz-info.score {
@@ -93,8 +93,8 @@ h1 {
 	margin-bottom: 0.5rem;
 	border-radius: 0.5rem;
 	cursor: pointer;
-    
-    transition: background-color 0.2s ease-in-out;
+
+	transition: background-color 0.2s ease-in-out;
 }
 
 .option:hover {
@@ -125,18 +125,18 @@ button {
 	appearance: none;
 	outline: none;
 	border: none;
-	
-    cursor: pointer;
-    padding: 0.5rem 1rem;
 
-    background-color: #2cce7d;
-    color: #ffffff;
-    
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    
-    border-radius: 0.5rem;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+
+	background-color: #2cce7d;
+	color: #ffffff;
+
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+
+	border-radius: 0.5rem;
 }
 
 .align {
@@ -152,9 +152,9 @@ button:disabled {
 
 h2 {
 	font-size: 2rem;
-	
-    margin-bottom: 2rem;
-    text-align: center;
+
+	margin-bottom: 2rem;
+	text-align: center;
 }
 
 p {
