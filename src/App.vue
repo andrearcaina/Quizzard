@@ -156,7 +156,10 @@ const restartQuiz = () => {
 			</section>
 
 			<section v-else>
-				<p>Your score is {{ score }}/{{ questions.length }}</p>
+				<p>You have a score of: {{ score }}/{{ questions.length }}</p>
+				<p> or {{ Math.round((score/questions.length)*100) }}%</p>
+				<p v-if="Math.round((score/questions.length)*100) < 50"> You failed! </p>
+				<p v-if="Math.round((score/questions.length)*100) >= 50"> You passed! </p>
 				
 				<div>
 					<button class="align" @click="restartQuiz">Restart Quiz</button>
