@@ -23,10 +23,12 @@ h2 {
 }
 
 .install {
-	background-color: #f5f5f5;
-	color: black;
-	padding: 10px;
-	border-radius: 4px;
+	background-color: #000000;
+	color: white;
+	border-radius: 8px;
+	padding: 5px;
+	margin: 0;
+	font-family: 'Roboto', monospace;
 }
 
 .app {

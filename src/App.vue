@@ -55,17 +55,17 @@ const restartQuiz = () => {
 			
 			<p>This was how I installed Vue.js with Vite:</p>
 			<pre class="install">
-				<code>
-				$ npm create vite@latest
-				? Project name: .
-				? Package name: quiz-app
-				? Select a framework: vue
-				? Select a variant: JavaScript
+				<div>
+					$ npm create vite@latest
+					? Project name: .
+					? Package name: quiz-app
+					? Select a framework: vue
+					? Select a variant: JavaScript
 
-				Done. Now run:
-				$ npm install
-				$ npm run dev
-				</code>
+					Done. Now run:
+					$ npm install
+					$ npm run dev
+				</div>
 			</pre>
 
 			<p> Fairly simple, all I had to do was follow a tutorial. </p>
@@ -79,15 +79,34 @@ const restartQuiz = () => {
 						<br />
 						<strong>Solution:</strong> Well, the best way to learn is to practice. I had to go through the documentation and watch some tutorials to get a better understanding of Vue.js. That's all. Overall, it was a fun experience!
 					</li>
+					
 					<li> 
 						<strong>Challenge:</strong> Deploying on GitHub Pages!
 						<br />
 						<strong>Solution:</strong> This took a while, but I finally got it. I had to install github pages onto vue, and then go into my package.json and add a script called "deploy". This allows me to deploy the app onto GitHub Pages.
 					</li>
-
-
 				</ul>
 			</div>
+
+			<pre class="install">
+				<div>
+					$ npm install --save-dev gh-pages
+
+					// in package.json 
+					"scripts": {
+						"deploy": "npm run build && gh-pages -d dist",
+					}
+
+					// back in terminal
+					$ npm run deploy
+
+					// vite.config.js
+					export default defineConfig({
+						base: 'Quizzard/',
+						plugins: [vue()],
+					});
+				</div>
+			</pre>
 			
 			<button class="align" v-if="!quizStarted" @click="startQuiz">Start Quizzard!</button>
 		</section>
